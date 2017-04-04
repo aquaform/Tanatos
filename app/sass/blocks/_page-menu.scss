@@ -1,0 +1,52 @@
+.page-menu {
+
+}
+
+.page-menu__bnt {
+
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+
+  &:visited {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  &:hover > span,
+  &:hover > span::before,
+  &:hover > span::after {
+    border: 2px solid $accent;
+  }
+
+  span {
+    position: relative;
+    display: inline-block;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    width: 20px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      border: 2px solid #ffffff;
+      border-radius: 10px;
+      width: 20px;
+    }
+
+    &::before {
+      top: -8px;
+      left: -2px;
+    }
+    &::after {
+      top: 4px;
+      left: -2px;
+    }
+
+
+  }
+
+}

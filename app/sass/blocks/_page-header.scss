@@ -1,0 +1,28 @@
+.page-header {
+  background-position: center;
+  background: url(../img/header-bg-layer.png),
+  url(../img/header-bg.jpg) no-repeat center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.page-header__wrapper {
+  @include wrapper();
+  display: flex;
+  flex-flow: nowrap column;
+}
+
+.page-header__page-nav {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+}
+
+
+.page-header__down {
+
+
+
+}
+

@@ -1,0 +1,51 @@
+.title-box {
+  @include col();
+  @include col-8();
+  @include offset-left(2);
+
+  @include col-lg-12();
+  @include offset-left-lg(0);
+  padding-top: 110px;
+
+}
+
+.title-box h1 {
+  font-size: 69px;
+  text-align: center;
+  font-weight: bold;
+
+  @include lg(font-size, 60px);
+  @include md(font-size, 50px);
+  @include sm(font-size, 40px);
+
+}
+
+.title-box p {
+  color: #FFFFFF;
+  font-size: 25px;
+  text-align: center;
+
+  @include lg(font-size, 22px);
+  @include md(font-size, 20px);
+  @include sm(font-size, 18px);
+
+}
+
+.title-box__hire-us {
+  color: #ffffff;
+  font-size: 16px;
+  min-width: 210px;
+}
+
+.title-box__our-works {
+  color: #ffffff;
+  font-size: 16px;
+  min-width: 210px;
+
+}
+
+.title-box__btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+}

@@ -34,6 +34,7 @@ body textarea:required:valid {
 
 html, body {
   height: 100%;
+  @include reset();
 }
 
 body {
@@ -44,37 +45,42 @@ body {
   font-family: $default-font;
   overflow-x: hidden;
   opacity: 1;
-
-
 }
 
-.container {
-  @include wrapper();
-
-
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  color: #ffffff;
+  font: $default-font;
+  span {
+    color: $accent;
+  }
 }
 
-.row {
-  @include row-flex();
-  @include justify-content(center);
-
-}
-
-.col {
-  @include col();
-  @include col-8();
-  //@include offset-left(2);
-
-}
-
-.img-responsive {
+.btn {
   display: block;
-  max-width: 100%;
-  height: auto;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #65696e;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 30px;
+  padding: 10px 0;
+
+  transition: background-color .4s ease;
+
+  &:hover {
+    background-color: $accent;
+    border: 1px solid transparent;
+  }
 }
 
 
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/page-menu";
+@import "blocks/title-box";
 
 
-@import "media";
+//@import "media";
 // Всегда в конце
