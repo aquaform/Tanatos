@@ -1,0 +1,52 @@
+.subscribe-box {
+   background: url(../img/bg-layer.png),
+           url("../img/subscribe-bg.jpg") no-repeat center fixed;
+
+}
+
+.subscribe-box__wrapper {
+  @include wrapper();
+  padding: 100px 0;
+}
+
+.subscribe-box__form {
+  @include row-flex();
+
+}
+
+.subscribe-box__e-mail {
+  @include col();
+  @include col-7();
+  @include offset-left(1);
+  @include col-sm-10();
+
+
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  height: 50px;
+  padding: 0 20px;
+
+  &:focus, &:active {
+    outline: none;
+  }
+
+}
+
+.subscribe-box__subscribe {
+  @include col();
+  @include col-3();
+  @include col-sm-6();
+  @include offset-left-sm(3);
+  @include sm(margin-top, 50px);
+
+  color: #FFFFFF;
+  height: 50px;
+
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
+
