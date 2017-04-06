@@ -1,0 +1,8 @@
+.our-team__wrapper {
+  @include wrapper();
+}
+
+.our-team__tittle {
+  color: #3e444e;
+  font-weight: bold;
+}
